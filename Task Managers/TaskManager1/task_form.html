@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Manager</title>
+<link rel="stylesheet" type="text/css" href="taskmanager.css">
+</head>
+<body>
+<h1>Tasks</h1>
+<form action="add_task.php" method="post">
+  <p>Category<br />
+  <select name="category">
+	  <option value="personal">personal</option>
+	  <option value="school">school</option>
+	  <option value="work">work</option>
+	  <option value="uncategorized" selected>uncategorized</option>
+  </select>
+  </p>
+
+  <p>Title<br />
+  <input type="text" name="title" value="" placeholder="title" maxlength="255" size="80"></p>
+
+  <p>Description<br />
+  <textarea name="description" rows="6" cols="80" placeholder="description"></textarea></p>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
